@@ -33,3 +33,20 @@ The following non-linear DR techniques will be implemented:
 
 Once the script is executed, it should generate a pickle file (**NAME**-DR.pkl) containing a DICT which scans through each of the input features, and implements different perplexities.
 
+## (3) Running Clustering Algorithm
+
+Once the Dimensionality Reduction is complete (**NAME**-DR.pkl), the pickle file can then be passed through the "generate_clusters_info.py"
+
+The clustering will be implemented on each of the DR latent spaces for cluster sizes from the following:
+- [2, 3, 4, 5, 6, 7, 8, 9, 10 ,15 ,20 ,25 ,30 ,35 ,40 ,45 ,50 ,60 ,70 ,80 ,90 ,100 ,150 ,200 ,300 ,400]
+
+The resultant file will be (**NAME**-CA.pkl)
+
+## (4) Analyze Cluster Quality
+
+Once the Clustering is complete, the Davies-Bouldin Score, Silhouette Score, and Integrated Silhouette Score will be computed to get an understanding of the quality of the clustering algorithm.
+
+## (5) Generate Ensembles
+
+## (6) Assess Quality of Ensembles - Experimental Chemical Shifts
+
