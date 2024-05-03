@@ -48,7 +48,7 @@ Once the Clustering is complete, the Davies-Bouldin Score, Silhouette Score, and
 
 Run the script **compute_ss_db.py**.
 
-This will scan through the clusters output in **NAME**-CA.pkl, compare them to the latent space **$NAME**-DR.pkl for the DB and SS, and compare to the original data in **$NAME**-INFO.pkl to compute the SS_Int.
+This will scan through the clusters output in **$NAME**-CA.pkl, compare them to the latent space **$NAME**-DR.pkl for the DB and SS, and compare to the original data in **$NAME**-INFO.pkl to compute the SS_Int.
 
 A new file, **$NAME**-SS-DB.pkl, will be generated from this script.
 
