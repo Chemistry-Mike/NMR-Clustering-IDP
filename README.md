@@ -40,7 +40,7 @@ Once the Dimensionality Reduction is complete (**$NAME**-DR.pkl), the pickle fil
 The clustering will be implemented on each of the DR latent spaces for cluster sizes from the following:
 - 2, 3, 4, 5, 6, 7, 8, 9, 10 ,15 ,20 ,25 ,30 ,35 ,40 ,45 ,50 ,60 ,70 ,80 ,90 ,100 ,150 ,200 ,300 ,400
 
-The resultant file will be (**NAME**-CA.pkl) in the _OUTPUT_ folder containing the labels from each of these clustering algorithms.
+The resultant file will be (**$NAME**-CA.pkl) in the _OUTPUT_ folder containing the labels from each of these clustering algorithms.
 
 ## (4) Analyze Cluster Quality
 
