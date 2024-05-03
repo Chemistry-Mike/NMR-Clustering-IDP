@@ -1,7 +1,7 @@
 # NMR-Clustering-IDP
 **Description** This repository contains many of the codes and scripts necessary to generate unique conformational ensembles from molecular dynamics trajectories.
 
-** (1) Generating Trajectory Information **
+## (1) Generating Trajectory Information
 
 Before running the scripts, make sure that the following files are contained in the folder you are running the python scripts in. Here is the formats that are required for the "generate_traj_info.py" script:
 
@@ -20,7 +20,7 @@ Once the script is executed, it should generate a pickle file (**NAME**-INFO.pkl
 - Phi Dihedral Angle (key = "phi")
 - Psi Dihedral Angle (key = "psi")
 
-** (2) Running Dimensionality Reduction **
+## (2) Running Dimensionality Reduction
 
 Once the file **NAME**-INFO.pkl is generated, you can then run the script "generate_traj_info.py" to generate 2D latent spaces from the input features.
 
