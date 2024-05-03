@@ -5,8 +5,8 @@
 
 Before running the scripts, make sure that the following files are contained in subdirectory, _INPUT_, below where you are running the python scripts in. Here is the formats that are required for the **generate_traj_info.py** script:
 
-- Compressed trajectory file **($NAME$.xtc)**
-- Topology file **($NAME$.TPR / $NAME$.GRO / $NAME$.PDB)**
+- Compressed trajectory file **($NAME.xtc)**
+- Topology file **($NAME.TPR / $NAME.GRO / $NAME.PDB)**
 
 Once the script is executed, it should generate a pickle file (**NAME**-INFO.pkl) in the _OUTPUT_ folder containing a DICT with each of the following obtained from the trajectory:
 
