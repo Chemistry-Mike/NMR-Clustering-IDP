@@ -1,3 +1,4 @@
+### Import necessary packages
 import numpy as np
 from sklearn.manifold import TSNE
 from deeptime.decomposition import TICA
