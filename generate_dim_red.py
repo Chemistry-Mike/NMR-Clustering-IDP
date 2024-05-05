@@ -16,12 +16,12 @@ HOME="path/to/dir"
 protein="TEST"
 
 ### Specify the location of the features pickle (input)
-INFO = pickle.load(open(HOME+"6-Conda/1-PICKLES/INFO/"+protein+"-INFO.pkl","rb"))
+INFO = pickle.load(open(HOME+"/Features/"+protein+"-INFO.pkl","rb"))
 ### Specify the location of the pickle file (output) 
-PKL = HOME+"6-Conda/1-PICKLES/DR/"+protein+"-DimRed.pkl"
+PKL = HOME+"/DimReds/"+protein+"-DimRed.pkl"
 
 ### Generate a DataFrame of the alpha carbons from the trajectory
-PDB = HOME+"0-Trajectories/"+protein+"-first.pdb"
+PDB = HOME+"/Trajectories/"+protein+"-first.pdb"
 traj=md.load(PDB,top=PDB)
 atoms, bonds = traj.topology.to_dataframe()
 
