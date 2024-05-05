@@ -8,7 +8,7 @@ Before running the scripts, ensure the following files are contained in the subd
 - Compressed trajectory file **(TEST.xtc)**
 - Topology file **(TEST.TPR / TEST.GRO / TEST.PDB)**
 
-Once the script is executed, it should generate a pickle file (**TEST**-INFO.pkl) in the _Pickles_ folder containing a DICT with each of the following obtained from the trajectory:
+Once the script is executed, it should generate a pickle file (**TEST**-INFO.pkl) in the _Features_ folder containing a DICT with each of the following obtained from the trajectory:
 
 - RMSD (key = "rmsd")
 - Radius of Gyration (key = "rg")
@@ -31,16 +31,16 @@ The following linear DR techniques will be implemented:
 The following non-linear DR techniques will be implemented:
 - tSNE: t-distributed Stochastic Neighbor Embedding (key = "tsne")
 
-Once the script is executed, it should generate a pickle file (**TEST**-DR.pkl) in the _OUTPUT_ folder containing a DICT, which scans through each input feature and implements different perplexities.
+Once the script is executed, it should generate a pickle file (**TEST**-DR.pkl) in the _DimRed_ folder containing a DICT, which scans through each input feature and implements different perplexities.
 
 ## (3) Running Clustering Algorithm
 
-Once the Dimensionality Reduction is complete (**TEST**-DR.pkl), the pickle file can be passed through the **generate_clusters_info.py** script.
+Once the Dimensionality Reduction is complete (**TEST**-DR.pkl), the pickle file can be passed through the **generate_clusters_labels.py** script.
 
 The clustering will be implemented on each of the DR latent spaces for cluster sizes from the following:
 - 2, 3, 4, 5, 6, 7, 8, 9, 10 ,15 ,20 ,25 ,30 ,35 ,40 ,45 ,50 ,60 ,70 ,80 ,90 ,100 ,150 ,200 ,300 ,400
 
-The resultant file will be (**TEST**-CA.pkl) in the _OUTPUT_ folder containing the labels from each clustering algorithm.
+The resultant file will be (**TEST**-CA.pkl) in the _Clustering_ folder containing the labels from each clustering algorithm.
 
 ## (4) Analyze Cluster Quality
 
