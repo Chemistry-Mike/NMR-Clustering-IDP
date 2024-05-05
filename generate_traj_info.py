@@ -7,6 +7,9 @@ import sys
 ### Specify the HOME directory
 HOME="path/to/dir"
 
+### Specify the system being investigated
+protein="TEST"
+
 ### Specify the location of the trajectory files (input)
 xtc=HOME+"Trajectories/"+protein+"-small.xtc"
 pdb=HOME+"Trajectories/"+protein+"-first.pdb"
