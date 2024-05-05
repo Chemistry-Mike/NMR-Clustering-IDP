@@ -9,3 +9,8 @@ import sys
 import math
 import mdtraj as md
 
+HOME="/mnt/proj1/open-27-2/bakkerm/"
+
+
+
+
