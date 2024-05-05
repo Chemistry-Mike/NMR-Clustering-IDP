@@ -3,12 +3,12 @@
 
 ## (1) Generating Trajectory Information
 
-Before running the scripts, make sure that the following files are contained in subdirectory, _INPUT_, below where you are running the python scripts in. Here is the formats that are required for the **generate_traj_info.py** script:
+Before running the scripts, ensure the following files are contained in the subdirectory, _Trajectories_, below where you run the Python scripts. Here are the formats that are required for the **generate_traj_info.py** script:
 
 - Compressed trajectory file **($NAME.xtc)**
 - Topology file **($NAME.TPR / $NAME.GRO / $NAME.PDB)**
 
-Once the script is executed, it should generate a pickle file (**$NAME**-INFO.pkl) in the _OUTPUT_ folder containing a DICT with each of the following obtained from the trajectory:
+Once the script is executed, it should generate a pickle file (**$NAME**-INFO.pkl) in the _Pickles_ folder containing a DICT with each of the following obtained from the trajectory:
 
 - RMSD (key = "rmsd")
 - Radius of Gyration (key = "rg")
@@ -22,7 +22,7 @@ Once the script is executed, it should generate a pickle file (**$NAME**-INFO.pk
 
 ## (2) Running Dimensionality Reduction
 
-Once the file **$NAME**-INFO.pkl is generated, you can then run the script **generate_traj_info.py** to generate 2D latent spaces from the input features.
+Once the file **$NAME**-INFO.pkl is generated, you can run the script **generate_dim_red.py** to generate 2D latent spaces from the input features.
 
 The following linear DR techniques will be implemented:
 - PCA: Principal Component Analysis (key = "pca")
